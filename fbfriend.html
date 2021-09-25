@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Longest Name in Friendlist</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+
+
+
+
+
+	<script>
+
+		document.write("H.W. 3"+"<br>"+"Longest Name in Friendlist"+"<br>"+"<br>");
+
+
+        var listOfNames = ['Ali', 'Aman','Lee Min Ho','Song JoonKi','Munzir', 'Runia Tanbin','Summer'];
+        var largest = 0;
+        var largestNameInArray=[0];
+        var i;
+
+        for (var i = 0; i < listOfNames.length; i++) {
+            if (largest < listOfNames[i].length ) {
+        
+                largest=listOfNames[i].length;
+                largestNameInArray = listOfNames[i];
+            }
+        }
+        document.write("List of Names : " + listOfNames + "<br>")
+        document.write("Final Largest Name : " + largestNameInArray + "<br>");
+        // document.write(listOfNames.length + "<br>");
+        document.write("Length of the Name : " + largest + "<br>");
+
+
+
+	</script>
+	
+</body>
+</html>
